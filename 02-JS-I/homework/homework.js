@@ -4,7 +4,7 @@
 const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = '34';
+const nuevoNum = 6;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -72,10 +72,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.lenght === str2.lenght){
+if (str1.length === str2.length){
   return true;
 } else {
-return false;
+  return false;
 }
 }
 
@@ -162,7 +162,7 @@ return Math.ceil (num);
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random();
+  return Math.random();
 }
 
 function esPositivo(numero) {
@@ -173,9 +173,9 @@ function esPositivo(numero) {
   if (numero===0){
   return false;
 } else if (numero > 0){
-  return "es positivo";
+  return "Es positivo";
 } else {
-return "es negativo";
+return "Es negativo";
 }
 
 }
@@ -191,14 +191,15 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-return nombre + ' ' + apellido;  
+  var nombrecompleto = nombre + ' ' + apellido;  
+    return nombrecompleto;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre+ '!';
+  return 'Hola' + ' ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -238,16 +239,16 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra > 1){
   return "Dato incorrecto";
-} if letra (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-return "es vocal";
+} if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+return "Es vocal";
 } else {
-  return "dato incorrecto";
+  return "Dato incorrecto";
 }
 }
 
 
 
-// No modificar nada debajo de esta línea
+// No moDificar nada debajo de esta línea
 // --------------------------------
 
 module.exports = {
